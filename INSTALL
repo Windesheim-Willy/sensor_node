@@ -11,12 +11,8 @@ fi
 
 git submodule update --init --recursive
 
-# Install motor controller
-cd $CURRENTDIR/components/motor_controller
-exec ./INSTALL
-
-# Install keyboard and joystick
-cd $CURRENTDIR/components/keyboard
+# Install Apriltags
+cd $CURRENTDIR/components/openmv_apriltag
 exec ./INSTALL
 
 cd $CURRENTDIR
