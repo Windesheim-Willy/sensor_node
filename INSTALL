@@ -15,4 +15,8 @@ git submodule update --init --recursive
 cd $CURRENTDIR/components/openmv_apriltag
 exec ./INSTALL
 
+# Install Sonar
+cd $CURRENTDIR/components/sonar
+exec ./INSTALL
+
 cd $CURRENTDIR
