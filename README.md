@@ -68,3 +68,8 @@ source ~/catkin_workspace/devel/setup.bash
 echo 'source ~/catkin_workspace/devel/setup.bash' >> ~/.bashrc
 export | grep ROS
 ```
+
+## Github
+'''
+sudo dnf install git-all
+'''
