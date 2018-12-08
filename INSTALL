@@ -19,4 +19,8 @@ exec ./INSTALL
 cd $CURRENTDIR/components/sonar
 exec ./INSTALL
 
+# Install Pose Tracking
+cd $CURRENTDIR/components/pose_tracking
+exec ./INSTALL
+
 cd $CURRENTDIR
