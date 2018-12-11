@@ -45,3 +45,6 @@ https://downloads.ubiquityrobotics.com/pi.html
 * Choose Finish
 
 ### Install Software
+
+Add in /bashsh
+export ROS_MASTER_URI=http://192.168.0.10:11311/
