@@ -1,4 +1,4 @@
-# sensor_node
+# Sensor node
 
 ## Installation on a Raspberry PI
 
