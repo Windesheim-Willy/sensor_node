@@ -8,7 +8,7 @@
 # Short-Description:  Enable willy processes
 ### END INIT INFO
 
-WOKRING_DIR="/opt/willy"
+WOKRING_DIR="/home/ubuntu/catkin_ws/src"
 cd $WOKRING_DIR
 
 case "$1" in
