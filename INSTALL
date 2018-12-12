@@ -19,14 +19,6 @@ echo $HOSTNAME > /etc/hostname
 echo $HOSTNAME > /boot/hostnames
 echo "Hostname changed to $HOSTNAME"
 
-# Install the ROS master
-cd $CURRENTDIR/components/openmv_apriltag
-exec ./INSTALL
-
-# Install the brain
-cd $CURRENTDIR/components/sonar
-exec ./INSTALL
-
 cd $CURRENTDIR
 
 ln -s $CURRENTDIR/START /etc/init.d/willy
