@@ -8,40 +8,6 @@
 # Short-Description:  Enable willy processes
 ### END INIT INFO
 
-cd /home/ubuntu/catkin_ws/src/
-
-case "$1" in
-start)
-  exec ./openmv/START start &>/dev/null &
-  exec ./sonar/START start &>/dev/null &
-  exec ./mpu6050_serial_to_imu/START start &>/dev/null &
-  ;;
-stop)
-  exec ./openmv/START stop &>/dev/null &
-  exec ./sonar/START stop &>/dev/null &
-  exec ./mpu6050_serial_to_imu/START stop &>/dev/null &
-  ;;
-restart)
-  $0 stop
-  $0 start
-  ;;
-*)
-  echo "Usage: $0 {start|stop|restart}"
-esac
-
-exit 0
-
-
-#!/bin/bash
-### BEGIN INIT INFO
-# Provides: willy
-# Required-Start: $all
-# Required-Stop:
-# Default-Start: 2 3 4 5
-# Default-Stop:
-# Short-Description:  Enable willy processes
-### END INIT INFO
-
 WOKRING_DIR="/opt/willy"
 cd $WOKRING_DIR
 
