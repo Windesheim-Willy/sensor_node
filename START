@@ -8,16 +8,18 @@
 # Short-Description:  Enable willy processes
 ### END INIT INFO
 
-cd /opt/willy
+cd /home/ubuntu/catkin_ws/src/
 
 case "$1" in
 start)
-  exec ./components/openmv_apriltag/START start &>/dev/null &
-  exec ./components/sonar/START start &>/dev/null &
+  exec ./openmv/START start &>/dev/null &
+  exec ./sonar/START start &>/dev/null &
+  exec ./mpu6050_serial_to_imu/START start &>/dev/null &
   ;;
 stop)
-  exec ./components/openmv_apriltag/START stop &>/dev/null &
-  exec ./components/sonar/START stop &>/dev/null &
+  exec ./openmv/START stop &>/dev/null &
+  exec ./sonar/START stop &>/dev/null &
+  exec ./mpu6050_serial_to_imu/START stop &>/dev/null &
   ;;
 restart)
   $0 stop
