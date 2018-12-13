@@ -4,3 +4,6 @@
 [submodule "components/sonar"]
 	path = components/sonar
 	url = https://github.com/Windesheim-Willy/sonar.git
+[submodule "components/pose_tracking"]
+	path = components/pose_tracking
+	url = https://github.com/Windesheim-Willy/pose_tracking.git
