@@ -17,7 +17,7 @@ start)
   exec ./START start &>/dev/null &
   cd $WOKRING_DIR/sonar
   exec ./START start &>/dev/null &
-  cd $WOKRING_DIR/pose_tracking/mpu6050_serial_to_imu
+  cd $WOKRING_DIR/pose_tracking
   exec ./START start &>/dev/null &
   ;;
 stop)
@@ -25,7 +25,7 @@ stop)
   exec ./START stop
   cd $WOKRING_DIR/sonar
   exec ./START stop
-  cd $WOKRING_DIR/pose_tracking/mpu6050_serial_to_imu
+  cd $WOKRING_DIR/pose_tracking
   exec ./START stop
   ;;
 restart)
