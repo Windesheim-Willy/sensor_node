@@ -1,0 +1,14 @@
+[Unit]
+Description=OpenMV april tag ros node
+After=network.target
+
+[Service]
+Type=simple
+# Another Type option: forking
+WorkingDirectory=/home/ubuntu/catkin_ws/src
+ExecStart=./START start
+Restart=on-failure
+# Other Restart options: or always, on-abort, etc
+
+[Install]
+WantedBy=multi-user.target
